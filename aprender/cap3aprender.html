@@ -19,9 +19,9 @@
                     <h1 class="display-3">SonEducare</h1>
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="position-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mr-2">
@@ -38,13 +38,13 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-2 text-center"> 
+    <div class="container mt-2 text-center" id="content"> 
         <h1 class="display-3">¿Sabías que...?</h1>
         <p>   
             ¿...La biblioteca Morgan, situada en Nueva York, contiene  el manuscrito original y las ilustraciones de 1943? Todos los dibujos del libro fueron realizados por su propio autor. La bilbioteca adquirió los manuscritos en 1968. Los mismos poseen treinta mil palabras, el doble de las que tiene el libro publicado, y los dibujos están llenos de manchas de café o quemaduras de cigarrillo.
         </p>
         <p>   
-            Además, en el año 2019, se encontraron bocetos originales en una antigua construcción del norte de Suiza, cuyo dueño era un coleccionista de grandes obras de arte. Al parece, estos elementos se habrían adquirido en una subasta hace 30 años. Además de los bocetos, también se encontró una carta de amor dirigida a su esposa, Consuelo.
+            Además, en el año 2019, se encontraron bocetos originales en una antigua construcción del norte de Suiza, cuyo dueño era un coleccionista de grandes obras de arte. Al parecer, estos elementos se habrían adquirido en una subasta hace 30 años. Además de los bocetos, también se encontró una carta de amor dirigida a su esposa, Consuelo.
         </p>
         <h1 class="display-3">Información de lo leído y/o escuchado en este capítulo...</h1>
         <p>
@@ -60,14 +60,19 @@
         <h1 class="display-4">¿Los niños tienden a imaginar tanto como a divagar?</h1>
         <h1 class="display-4">¿Por qué el Principito no toma en importancia el cuestionamiento del aviador?</h1>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-success mt-2" type="button">Reproducir texto</button>
+            <form action="#">
+                <div class="row">
+                  <div class="outer">
+                    <select></select>
+                  </div>
+                </div>
+                <button class="btn btn-success mt-2" type="button">Reproducir libro</button>
+              </form>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2 mb-5">
             <button class="btn btn-secondary me-md-2" type="button" onclick="location.href='../capitulos/cap3.html'">Atrás</button>
             <button class="btn btn-secondary" type="button" onclick="location.href='../capitulos/cap4.html'">Capítulo Siguiente</button>
         </div>
-    
-        <script src="../js/script.js"></script>
     </div>
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
@@ -95,7 +100,7 @@
           2022 — Rosario, Santa Fe, Argentina
         </div>
       </footer>
-    <script src="../js/script.js"></script>
+      <script src="./index.js"></script>
     <script src="../bootstrap-5.2.0/dist/js/bootstrap.bundle.min.js" ></script>  
 
   </body>               

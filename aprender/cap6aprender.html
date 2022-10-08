@@ -19,9 +19,9 @@
                     <h1 class="display-3">SonEducare</h1>
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="position-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mr-2">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-2 text-center"> 
+    <div class="container mt-2 text-center" id="content"> 
         <h1 class="display-3">¿Sabías que...?</h1>
         <p>   
             ¿...En 1993, se descubrió un asteroide y se lo nombró B-612 en homenaje al libro? 
@@ -60,14 +60,19 @@
         <h1 class="display-4">¿Los niños pueden sentir la tristeza como los adultos?</h1>
         <h1 class="display-4">¿El sentimiento de soledad que experiencia un niño puede asemejarse al que siente un adulto?</h1>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-success mt-2" type="button">Reproducir texto</button>
+            <form action="#">
+                <div class="row">
+                  <div class="outer">
+                    <select></select>
+                  </div>
+                </div>
+                <button class="btn btn-success mt-2" type="button">Reproducir libro</button>
+              </form>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2 mb-5">
             <button class="btn btn-secondary me-md-2" type="button" onclick="location.href='../capitulos/cap6.html'">Atrás</button>
             <button class="btn btn-secondary" type="button"onclick="location.href='#'">Capítulo Siguiente</button>
         </div>
-    
-        <script src="../js/script.js"></script>
     </div>
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
@@ -96,7 +101,7 @@
           2022 — Rosario, Santa Fe, Argentina
         </div>
       </footer>
-    <script src="../js/script.js"></script>
+      <script src="./index.js"></script>
     <script src="../bootstrap-5.2.0/dist/js/bootstrap.bundle.min.js" ></script>  
 
   </body>               
